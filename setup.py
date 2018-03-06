@@ -14,7 +14,7 @@ setup(
     name='PySkeletor',  # Required
     # Versions should comply with PEP 440:
     # https://www.python.org/dev/peps/pep-0440/
-    version='0.1alpha1',  # Required
+    version='0.1',  # Required
 
     description='A fairly complete Python boilerplate project',  # Required
     long_description=LONG_DESCRIPTION,  # Optional
