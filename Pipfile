@@ -22,3 +22,5 @@ pytest = "*"
 yapf = "*"
 rope = "*"
 "e1839a8" = {path = ".", editable = true}
+pytest-runner = "*"
+twine = "*"
