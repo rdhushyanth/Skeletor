@@ -15,4 +15,6 @@ cache:
 
 install:
   - 'choco install miniconda3 --ia="/AddToPath:1"'
+  - refreshenv
   - where python
+  - where conda
