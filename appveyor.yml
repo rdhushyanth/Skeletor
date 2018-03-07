@@ -14,7 +14,7 @@ cache:
   - C:\ProgramData\chocolatey\lib -> appveyor.yml
 
 install:
-  - 'choco install miniconda3 --ia="/AddToPath:1"'
+  - 'choco install miniconda3 --install-arguments'"/AddToPath:1"''
   - refreshenv
   - where python
   - where conda
