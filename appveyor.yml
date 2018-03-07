@@ -18,6 +18,7 @@ install:
   - refreshenv
   - set PATH=%PATH%;C:\Tools\miniconda3;C:\Tools\miniconda3\Scripts
   - activate root
-  - python setup.py test
 
-
+test_script:
+- python setup.py test
+build: off
