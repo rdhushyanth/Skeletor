@@ -14,5 +14,5 @@ cache:
   - C:\ProgramData\chocolatey\lib -> appveyor.yml
 
 install:
-  - "cinst miniconda3 /AddToPath:1"
+  - 'choco install miniconda3 --ia="/AddToPath:1"'
   - where python
