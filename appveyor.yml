@@ -1,0 +1,14 @@
+version: 1.0.{build}-{branch}
+# branches to build
+branches:
+  # whitelist
+  only:
+    - master
+    - production
+
+  # blacklist
+  except:
+    - gh-pages
+install:
+  - cinst miniconda3
+  - where python
