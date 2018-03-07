@@ -9,6 +9,10 @@ branches:
   # blacklist
   except:
     - gh-pages
+cache:
+  - C:\ProgramData\chocolatey\bin -> appveyor.yml
+  - C:\ProgramData\chocolatey\lib -> appveyor.yml
+
 install:
-  - cinst miniconda3
+  - "cinst miniconda3 /AddToPath:1"
   - where python
