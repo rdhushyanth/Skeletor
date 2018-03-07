@@ -14,8 +14,9 @@ cache:
   - C:\ProgramData\chocolatey\lib -> appveyor.yml
 
 install:
-  - >
-    choco install miniconda3 --install-arguments='"/AddToPath:1"'
+  - cinst miniconda3
   - refreshenv
-  - where python
-  - where conda
+  - set PATH=%PATH%;C:\Tools\miniconda3;C:\Tools\miniconda3\Scripts
+  - activate root
+  - python setup.py test
+
